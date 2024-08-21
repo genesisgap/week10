@@ -6,10 +6,10 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Create A Movie App",
-  description: "A Movie Application",
+  title: "The Movie Planet",
+  description: "A movie application",
   
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -24,5 +24,5 @@ export default function RootLayout({ children }) {
       <Footer />
       </body>
     </html>
-  )
+  );
 }

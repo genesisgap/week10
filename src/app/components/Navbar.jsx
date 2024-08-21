@@ -3,26 +3,26 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav>
-        <ul className='flex justify-around capitalize items-center h-36 bg-slate-600 text-white text-lg'>
+        <ul className='flex justify-around capitalize font-bold items-center h-20 bg-black text-gray-700 text-lg'>
 
             <Link href={'/'}>
-            <li>home</li>
+            <li className="hover:text-green-500">home</li>
             </Link>
 
-            <Link href={'/gallery'}>
-            <li>gallery</li>
+            <Link href={'/movies'}>
+            <li className="hover:text-green-500">movies</li>
             </Link>
 
-            <Link href={'/about us'}>
-            <li>about us</li>
+            <Link href={'/about'}>
+            <li className="hover:text-green-500">about us</li>
             </Link>
 
-            <Link href={'/contact us'}>
-            <li>contact us</li>
+            <Link href={'/contact'}>
+            <li className="hover:text-green-500">contact us</li>
             </Link>
 
-            <Link href={'/help'}>
-            <li>help</li>
+            <Link href={'/more'}>
+            <li className="hover:text-green-500">more</li>
             </Link>
 
         </ul>

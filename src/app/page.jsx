@@ -1,9 +1,18 @@
-import React from 'react'
+import Image from "next/image";
+
+import MovieLists from "./components/MovieLists";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div className='bg-pink-800 h-screen flex flex-col items-center justify-center text-white uppercase font-bold'>
-      <h1>This Is Our Movie Home</h1>
+    <>
+    <div className='flex justify-around capitalize hover:text-green-500 font-bold items-center h-36 bg-slate-900 text-9xl text-fuchsia-700'>
+      The Movie Planet
     </div>
+        <Header />
+        <MovieLists />
+    </>
+
+   
   )
 }
