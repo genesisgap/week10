@@ -16,10 +16,13 @@ export default function MovieLists() {
 
   return (
     <>
-    <div className='grid grid-cols-5 gap-4 px-16 py-32 capitalize items-right bg-slate-900 text-white'>
+    <div className='grid grid-cols-5 gap-4 px-16 py-32 capitalize items-right bg-black text-white'>
       {cards}
        
     </div>
+    <Link href={'/movies'} className='flex items-center w-fit rounded-md bg-black justify-center my-5'>
+    <span className='bg-black text-white capitalize rounded-md p-3'>Click to see..</span>
+      </Link>
     </>
   )
 }

@@ -6,9 +6,7 @@ import Header from "./components/Header";
 export default function Home() {
   return (
     <>
-    <div className='flex justify-around capitalize hover:text-green-500 font-bold items-center h-36 bg-slate-900 text-9xl text-fuchsia-700'>
-      The Movie Planet
-    </div>
+    <div className='flex h-36 bg-black'></div>
         <Header />
         <MovieLists />
     </>
