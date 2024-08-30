@@ -6,10 +6,9 @@ export const metadata = {
 
 export default function Layout({ children }) {
   return (
-    <div>
-        <h1>More Information On Movie Reviews</h1>
-        {children}
+    <div style={{ backgroundColor: 'orange', padding: 170}}>
+      <h1 style={{ color: 'darkblue', fontSize: 100,  }}>Inspire..</h1>
+      {children}
     </div>
-   
   )
 }

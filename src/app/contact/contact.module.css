@@ -1,17 +1,81 @@
-.caleb{
-    min-height: 100vh;
-    background: linear-gradient(45deg, blue 30%, fuchsia 30%, fuchsia 60%, khaki 60%);
+.container {
+  background: #201f1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-image: url('/public/quarkstudio.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
-.caleb h1{
-    text-transform: uppercase;
-    font-size: 3rem;
-    padding-block: 1em;
-    text-align: center;
+.h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-.sam{
-    border: 15px solid blue;
-    width: 60%;
-    margin: auto;
+.p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: grey;
+  float: inline-end;
+  
+}
+
+.form {
+  background:#ccc;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2rem;
+  width: 30rem;
+}
+
+.formTitle {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.formLabel {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.formInput {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.formBreak {
+  margin-bottom: 100rem;
+}
+
+.formButton {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  display: flex;
+ text-align: center;
+}
+
+.formButton:hover {
+  background-color: black;
 }
