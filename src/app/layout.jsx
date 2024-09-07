@@ -4,11 +4,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { SidebarProvider } from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
-  title: "The Movie Planet",
-  description: "A movie application",
+  title: "The Movie Pop",
+  description: "A Movie Application",
   
 };
 
@@ -26,8 +26,7 @@ export default function RootLayout({ children }) {
 
       <Footer />
         </SidebarProvider>
-      
-      </body>
+       </body>
     </html>
   );
 }

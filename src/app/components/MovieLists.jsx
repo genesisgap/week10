@@ -16,13 +16,18 @@ export default function MovieLists() {
 
   return (
     <>
-    <div className='grid grid-cols-4  gap-4 px-16 py-24 capitalize items-right bg-black text-white'>
-      {cards}
-       
-    </div>
-    <Link href={'/movies'} className='flex items-center w-fit rounded-md bg-black justify-center my-0'>
-    <span className='bg-orange-950 text-white capitalize p-2'>see more..</span>
-      </Link>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-8 py-12 bg-black text-white">
+  {/* Rendered Cards */}
+  {cards}
+
+  {/* "See more..." Link */}
+  <Link href={'/movies'} className="flex items-center justify-center w-full col-span-1 sm:col-span-2 md:col-span-4 lg:col-span-4">
+    <span className="bg-gray-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 text-center capitalize transition-colors duration-300 ease-in-out">
+      See more
+    </span>
+  </Link>
+</div>
+
     </>
   )
 }

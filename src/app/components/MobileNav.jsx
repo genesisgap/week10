@@ -1,59 +1,61 @@
 "use client"
-import { GiHamburgerMenu } from 'react-icons/gi'
-import Link from 'next/link'
-import { useState } from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function MobileNav() {
-    const [open, setOpen] = useState(false)
-    const [val, setVal] = useState(10)
+  const [open, setOpen] = useState(false);
+  const [val, setVal] = useState();
 
-    function changeVal(){
-        setVal(prev => prev + 20)
-    }
+  function changeVal() {
+    setVal((prev) => prev + 30);
+  }
 
-    function controlNav(){
-        setOpen(!open)
-}
+  function controlNav() {
+    setOpen(!open);
+  }
+
   return (
-    <nav>
-        <ul className='flex items-center justify-around md:hidden h-36'>
-            <li>Home</li>
-            <li onClick={controlNav} className='cursor-pointer'>
-                <GiHamburgerMenu />
-            </li>
-        </ul>
+    <nav className="relative">
+      {/* Hamburger Icon */}
+      <ul className="flex items-center justify-around md:hidden h-20 bg-black text-white">
+        <li>
+          <Link href={'/'}>Home</Link>
+        </li>
+        <li onClick={controlNav} className="cursor-pointer text-2xl" aria-label="Toggle Menu">
+          <GiHamburgerMenu />
+        </li>
+      </ul>
 
-        {open &&
-        <ul className="flex flex-col justify-around md:hidden capitalize items-end h-32 pr-24">
-
-            <Link href={'/'}>
+      {/* Mobile Menu */}
+      {open && (
+        <ul className="absolute top-16 right-0 bg-black text-white w-auto rounded-lg shadow-lg py-4 px-6 flex flex-col gap-2 capitalize items-end">
+          <Link href={'/'}>
             <li className="hover:text-green-500">home</li>
-            </Link>
+          </Link>
 
-            <Link href={'/movies'}>
+          <Link href={'/movies'}>
             <li className="hover:text-green-500">movies</li>
-            </Link>
+          </Link>
 
-            <Link href={'/about'}>
-            <li className="hover:text-green-500">about us</li>
-            </Link>
+          <Link href={'/about'}>
+            <li className="hover:text-green-500">about</li>
+          </Link>
 
-            <Link href={'/contact'}>
-            <li className="hover:text-green-500">contact us</li>
-            </Link>
+          <Link href={'/contact'}>
+            <li className="hover:text-green-500">contact</li>
+          </Link>
 
-            <Link href={'/more'}>
-            <li className="hover:text-green-500">more</li>
-            </Link>
+          <Link href={'/more'}>
+            <li className="hover:text-green-500">more+</li>
+          </Link>
 
-            <li>{val}</li>
-            <li onClick={changeVal}></li>
-
+          <li className="text-fuchsia-500"> {val}</li>
+          <li onClick={changeVal} className="cursor-pointer text-blue-500 hover:text-blue-300">
+            {/* Increase Value */}
+          </li>
         </ul>
-
-}
-
+      )}
     </nav>
-              
-  )
+  );
 }

@@ -2,7 +2,7 @@ import styles from './contact.module.css'
 
 export default function ContactUsPage() {
   return (
-    <div className={styles.container} style={{ backgroundImage: 'url(/public/quarkstudio.jpg)'}} >
+    <div className={styles.container} style={{ backgroundImage: 'url(/quarkstudio.jpg)'}} >
       <h1 className={styles.h1}>Please get in touch with us..</h1>
       <p className={styles.p}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea mollitia neque voluptates quia tempora ex, modi fugit, repellat rem harum consequuntur excepturi temporibus, dolore consequatur beatae natus autem minus corrupti. Voluptatem laudantium eligendi fugiat repudiandae dolores nobis hic numquam, totam tempore esse eius harum illo ut dolor ducimus qui. Accusantium minus magni reprehenderit illo sunt ducimus itaque iusto cupiditate ex earum? Pariatur repudiandae maxime sed cupiditate voluptatem quia tempore quidem? Ut quibusdam provident est assumenda facere cum architecto quos fugiat.</p>
 
