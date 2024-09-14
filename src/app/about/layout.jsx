@@ -1,18 +1,146 @@
+import { SiWondersharefilmora } from "react-icons/si";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { IoLogoVercel } from "react-icons/io5";
+import { TbBrandDisney } from "react-icons/tb";
+
+
+
 export const metadata = {
   title: "About | Movie Planet App",
   description: "Learn about | A movie application",
-  keywords: 'nollywood, hollywood, chinese movie, bollywood, animations'
-
-  
+  keywords: 'nollywood, hollywood, chinese movie, bollywood, animations',
 };
 
 export default function Layout({ children }) {
-    return (
-        <div> 
-            <h1 className='bg-gray-800 flex flex-col text-7xl items-center justify-center text-gray-400 capitalize font-bold'>about us </h1>
-            <p className=' h-60 bg-black text-gray-400 text-1xl text-center justify-center flex flex-col'>Movie Arcade is your source for movie reviews and movie ratings to help maximize your movie-going-experience. Our easy to use movie reviews and movie ratings are based on scores and opinions from respected movie critics, family advocacy groups and movie fans like you.Movie Arcade is your source for movie reviews and movie ratings to help maximize your movie-going-experience. Our easy to use movie reviews and movie ratings are based on scores and opinions from respected movie critics, family advocacy groups and movie fans like you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore minus dolores consectetur velit quasi esse porro doloremque itaque similique nobis cupiditate saepe sint quo omnis voluptatem, error sed officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est dolorem veritatis ab, laboriosam repudiandae saepe accusantium fugit. Ad laudantium nisi qui quos beatae deserunt perferendis voluptatem quae fuga repudiandae.</p>
-            {children}
+  return (
+    <div className="text-white h-auto w-auto md:flex md:flex-wrap items-center shadow-xl md:justify-center l bg-black p-12 ">
+      <div>
+        <h2 className="text-2xl md:text-5xl capitalize font-bold">About Us</h2>
+
+        <div className="md:flex flex-wrap flex-col md:flex-row items-start gap-10 mt-8">
+          
+          <div className="md:pr-20">
+          <SiWondersharefilmora size={200} color="blue" />
+           </div>
+
+        
+          <ul className="space-y-8">
+           
+            <li className="flex gap-4 items-start">
+              <FaArrowAltCircleRight size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Mission</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+          
+            <li className="flex gap-4 items-start">
+              <FaArrowAltCircleRight size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Vision</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+        
+            <li className="flex gap-4 items-start">
+              <FaArrowAltCircleRight size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Purpose</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br />
+
+      {/* credits page area */}
+
+     <div className="md:flex-wrap">
+        <h2 className="text-2xl md:text-6xl capitalize font-bold">Credits</h2>
+
+        <div className="md:flex flex-wrap flex-col md:flex-row items-start gap-10 mt-8">
+          
+          <div className="md:pr-20">
+          <SiWondersharefilmora size={200} color="blue" />
+           </div>
+
+        
+          <ul className="space-y-8">
+           
+            <li className="flex gap-4 items-start">
+              <FaArrowAltCircleRight size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Univelcity</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+          
+            <li className="flex gap-4 items-start">
+              <FaGithub size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Github</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+        
+            <li className="flex gap-4 items-start">
+              <IoLogoVercel size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Vercel</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 items-start">
+              <TbBrandDisney size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Disney UK</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 items-start">
+              <FaArrowAltCircleRight size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Frontend June24 Cohorts Collegues</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+            <button className='bg-orange-700 hover:opacity-85 capitalize hover:scale-105 md:px-4 mx-2 md:py-2 duration-300 mt-0 font-semibold rounded-md text-white'>go to home </button> 
+          </ul>
+
+          </div>
         </div>
 
-    )
+        
+    
+      
+
+      {children}
+    </div>
+  );
 }

@@ -18,7 +18,7 @@ export default function MobileNav() {
   return (
     <nav className="relative">
       {/* Hamburger Icon */}
-      <ul className="flex items-center justify-around md:hidden h-20 bg-black text-white">
+      <ul className="flex justify-between md:items-center md:hidden h-64 text-white">
         <li>
           <Link href={'/'}>Home</Link>
         </li>

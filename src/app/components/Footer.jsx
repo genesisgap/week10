@@ -27,7 +27,7 @@ export default function Footer() {
   <a href="/more" className="text-gray-600 hover:text-gray-300 py-2 px-4 rounded transition-colors duration-300 ease-in-out hover:bg-orange-950 hover:underline">More..</a>
   </nav> */}
 
-     <p className="text-gray-400 p-12 items-end hover:text-white capitalize">
+     <p className="text-gray-400 p-12 px-4 py-8 items-end hover:text-white capitalize">
     Copyrights &copy; movie pop {new Date().getFullYear()}  -  private policy.  -  terms of use. - Cookie Policy. - all rights reserved.
       </p>
   
