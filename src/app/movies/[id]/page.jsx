@@ -1,10 +1,11 @@
 "use client"
+import { useContext, useMemo } from "react";
 import { movies } from "@/app/data";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
 import MovieCard from "@/app/components/MovieCard";
 import { SidebarContext } from "@/app/providers";
-import { useContext, useMemo } from "react";
+
 
 const robo = Roboto({ subsets: ["latin"], weight: ['400'] });
 

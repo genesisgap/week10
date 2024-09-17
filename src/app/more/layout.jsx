@@ -6,8 +6,10 @@ export const metadata = {
 
 export default function Layout({ children }) {
   return (
-    <div style={{ backgroundColor: 'orange', padding: 170}}>
-      <h1 style={{ color: 'darkblue', fontSize: 100,  }}>Inspire..</h1>
+    <div className="flex bg-black justify-center items-center">
+      
+
+
       {children}
     </div>
   )

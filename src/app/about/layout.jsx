@@ -3,6 +3,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { TbBrandDisney } from "react-icons/tb";
+import Link from "next/link";
 
 
 
@@ -129,9 +130,20 @@ export default function Layout({ children }) {
                 </p>
               </div>
             </li>
+            
+             <br />
 
-            <button className='bg-orange-700 hover:opacity-85 capitalize hover:scale-105 md:px-4 mx-2 md:py-2 duration-300 mt-0 font-semibold rounded-md text-white'>go to home </button> 
+            <Link href={'/'}>
+            <button className='bg-blue-700 justify-center hover:opacity-85 capitalize hover:scale-105 md:px-4 mx-2 md:py-2 duration-300 mt-0 font-semibold rounded-md text-white'>go to home </button> 
+            </Link> <Link href={'/contact'}>
+            <button className='bg-orange-700 justify-center hover:opacity-85 capitalize hover:scale-105 md:px-4 mx-2 md:py-2 duration-300 mt-0 font-semibold rounded-md text-white'>contact us</button> 
+            </Link>
+
+            
+
+
           </ul>
+
 
           </div>
         </div>

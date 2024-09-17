@@ -13,7 +13,7 @@ export default function Header() {
         <p className='text-3xl p-2 font-extrabold capitalize text-white tracking-tight'>premium entertainment for your delight.</p>
       </div>
 
-      
+      <button className='bg-orange-700 hover:opacity-85 capitalize hover:scale-105 md:px-4 mx-2 md:py-2 duration-300 mt-0 font-semibold rounded-md text-white'>movie show </button> 
       
     </div>
   
