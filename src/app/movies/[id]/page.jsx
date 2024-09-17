@@ -41,8 +41,7 @@ export default function MovieDetails({ params }) {
     [details.Type, details.Title]
   );
 
-  const relatedCard = useMemo(() => 
-    relatedMovies.map((card, index) => (
+  const relatedCard = useMemo(() => relatedMovies.map((card, index) => (
       <Link 
         href={`/movies/${card.Title.split(' ').join('-')}`} 
         title={card.Title} 

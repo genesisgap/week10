@@ -36,7 +36,7 @@ export default function WishesPage() {
                 <tr key={index} className="border-b border-gray-800">
                   <td className="p-4">
                     <Image
-                      src={`/mv/${movie.title.split(' ').join('')}.jpeg`}
+                      src={`/public/mv/${movie.title.split(' ').join('')}.jpeg`}
                       alt={movie.title}
                       title={movie.title}
                       width={150}

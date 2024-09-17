@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function MorePage() {
   const movies = [
@@ -68,7 +69,7 @@ export default function MorePage() {
           <Link key={movie.id} href={`/movies/${movie.slug}`}>
             <div className="bg-white bg-opacity-5 backdrop-blur-md p-6 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               {/* Movie Poster */}
-              <img
+              <Image
                 src={movie.image}
                 alt={`${movie.title} Poster`}
                 className="w-full h-auto object-cover rounded-lg mb-4"  
