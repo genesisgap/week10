@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function WishesPage() {
   const { movieItem, setMovieItem } = useContext(SidebarContext);
 
-  // Function to remove a movie from the wishlist
+  
   const handleDelete = (title) => {
     const updatedMovies = movieItem.filter((movie) => movie.title !== title);
     setMovieItem(updatedMovies);

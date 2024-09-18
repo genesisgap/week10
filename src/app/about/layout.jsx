@@ -8,7 +8,7 @@ import Link from "next/link";
 
 
 export const metadata = {
-  title: "About | Movie Planet App",
+  title: "About | Movie Pop",
   description: "Learn about | A movie application",
   keywords: 'nollywood, hollywood, chinese movie, bollywood, animations',
 };
@@ -65,7 +65,6 @@ export default function Layout({ children }) {
 
       <br />
 
-      {/* credits page area */}
 
      <div className="md:flex-wrap">
         <h2 className="text-2xl md:text-6xl capitalize font-bold">Credits</h2>
@@ -139,18 +138,10 @@ export default function Layout({ children }) {
             <button className='bg-orange-700 justify-center hover:opacity-85 capitalize hover:scale-105 md:px-4 mx-2 md:py-2 duration-300 mt-0 font-semibold rounded-md text-white'>contact us</button> 
             </Link>
 
-            
-
-
           </ul>
-
 
           </div>
         </div>
-
-        
-    
-      
 
       {children}
     </div>

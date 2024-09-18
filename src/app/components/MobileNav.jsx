@@ -17,7 +17,7 @@ export default function MobileNav() {
 
   return (
     <nav className="md:flex md:flex-wrap">
-      {/* Hamburger Icon */}
+   
       <ul className="flex justify-between md:items-center md:hidden h-32 text-white">
         <li>
           <Link href={'/'}>Home</Link>
@@ -27,7 +27,7 @@ export default function MobileNav() {
         </li>
       </ul>
 
-      {/* Mobile Menu */}
+     
       {open && (
         <ul className="absolute top-16 right-0 bg-black text-white w-auto rounded-lg shadow-lg py-4 px-6 flex flex-col gap-2 capitalize items-end">
           <Link href={'/'}>
@@ -52,7 +52,7 @@ export default function MobileNav() {
 
           <li className="text-fuchsia-500"> {val}</li>
           <li onClick={changeVal} className="cursor-pointer text-blue-500 hover:text-blue-300">
-            {/* Increase Value */}
+          
           </li>
         </ul>
       )}

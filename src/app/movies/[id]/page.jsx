@@ -11,10 +11,10 @@ const robo = Roboto({ subsets: ["latin"], weight: ['400'] });
 export default function MovieDetails({ params }) {
   const { setVal, movieItem, setMovieItem } = useContext(SidebarContext);
 
-  // Find movie by URL param
+
   const details = movies.find(movie => movie.Title.split(' ').join('-') === params.id);
 
-  // Memoize related movies to improve performance
+ 
   const relatedMovies = useMemo(() => 
     movies.filter(card => card.Type === details.Type && details.Title !== card.Title), 
     [details.Type, details.Title]
@@ -42,7 +42,7 @@ export default function MovieDetails({ params }) {
     [relatedMovies]
   );
 
-  // Handle case where movie is not found
+ 
   if (!details) {
     return (
       <div className="text-center py-10">
@@ -56,7 +56,6 @@ export default function MovieDetails({ params }) {
     );
   }
 
-  // Add movie to cart function
   function handleMovieAdd() {
     setVal(prev => prev + 1);
     setMovieItem([...movieItem, { title: details.Title, epi: details.Epilogue, type: details.Type }]);
@@ -64,12 +63,12 @@ export default function MovieDetails({ params }) {
 
   return (
     <div className="px-6 md:px-16 py-8">
-      {/* Movie Title */}
+  
       <h1 className={`${robo.className} text-center font-extrabold text-4xl md:text-6xl bg-gray-800 text-white py-4 rounded-md`}>
         {details.Title}
       </h1>
 
-      {/* Movie Details */}
+   
       <div className="text-center text-lg md:text-2xl py-4">
         <p className="text-gray-800 italic py-1">{details.Epilogue}</p>
         <div className="py-2 text-gray-800">
@@ -83,7 +82,7 @@ export default function MovieDetails({ params }) {
         </div>
       </div>
 
-      {/* Add Movie Button */}
+   
       <div className="text-center py-6">
         <button 
           onClick={handleMovieAdd} 
@@ -92,7 +91,7 @@ export default function MovieDetails({ params }) {
         </button>
       </div>
 
-      {/* Related Movies Section */}
+
       <div>
         <h2 className="text-center bg-gray-700 text-white text-2xl py-2 font-bold rounded-md">
           Related Movies

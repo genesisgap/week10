@@ -10,7 +10,7 @@ export default function MorePage() {
       genre: 'Sci-Fi',
       slug: 'elio',
       image: '/elio.jpeg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_elio',
+      // youtubeUrl: 'https://www.youtube.com/watch?v=trailer_elio',
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function MorePage() {
       genre: 'Crime',
       slug: 'young-woman-and-the-sea',
       image: '/young.jpeg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_young',
+      // youtubeUrl: 'https://www.youtube.com/watch?v=trailer_young',
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ export default function MorePage() {
       genre: 'Drama',
       slug: 'the-marvels',
       image: '/TheMarvels.jpeg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_marvels',
+      // youtubeUrl: 'https://www.youtube.com/watch?v=trailer_marvels',
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ export default function MorePage() {
       genre: 'Action',
       slug: 'snow-white',
       image: '/showwhite.jpeg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_snowwhite',
+      // youtubeUrl: 'https://www.youtube.com/watch?v=trailer_snowwhite',
     },
     {
       id: 5,
@@ -42,7 +42,7 @@ export default function MorePage() {
       genre: 'Sci-Fi',
       slug: 'indiana-jones',
       image: '/jones.jpeg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_jones',
+      // youtubeUrl: 'https://www.youtube.com/watch?v=trailer_jones',
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ export default function MorePage() {
       genre: 'Sci-Fi',
       slug: 'solo',
       image: '/solo.jpeg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_solo',
+      // youtubeUrl: 'https://www.youtube.com/watch?v=trailer_solo',
     },
   ];
 
@@ -63,12 +63,12 @@ export default function MorePage() {
         Discover some of the greatest movies across various genres, handpicked just for you. Click on any movie to dive deeper into the review.
       </p>
 
-      {/* Movies Section */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {movies.map((movie) => (
           <Link key={movie.id} href={`/movies/${movie.slug}`}>
             <div className="bg-white bg-opacity-5 backdrop-blur-md p-6 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
-              {/* Movie Poster */}
+           
               <img
                 src={movie.image}
                 alt={`${movie.title} Poster`}
@@ -77,15 +77,16 @@ export default function MorePage() {
               <h2 className="text-2xl text-white font-semibold">{movie.title}</h2>
               <p className="text-sm text-gray-300">Genre: {movie.genre}</p>
 
-              {/* YouTube Trailer Link */}
-              <a
+           
+              {/* <a
                 href={movie.youtubeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 mt-2 block text-sm hover:underline"
               >
                 Watch Trailer on YouTube
-              </a>
+              </a> */}
+              
             </div>
           </Link>
         ))}

@@ -7,7 +7,7 @@ import { SidebarProvider } from "./providers";
 const inter = Inter({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
-  title: "The Movie Pop",
+  title: "Movie Pop",
   description: "A Movie Application",
   
 };
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-black" >
-      <body className={inter.className}>
+      <body className={inter.className} >
         <SidebarProvider>
 
         <Navbar />
