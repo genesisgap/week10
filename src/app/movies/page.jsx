@@ -28,9 +28,9 @@ export default function MoviePage() {
   ))
     return (
       <>
-    <div className="flex items-center justify-between p-2 border-2 w-4/12 rounded-full mt-2 border-blue-700 m-auto">
-    <input type="text" name="search" id="search" className="outline-none w-full text-red-700 text-1xl" defaultValue={searchMovie} placeholder="Search here.."
-    onChange={(e)=>filterSearch(e)}/>
+    <div className="flex items-center bg-white justify-between p-2 border-2 w-4/12 rounded-full mt-2 border-blue-700 m-auto">
+    <input type="text" name="search" id="search" className="outline-none w-full text-red-700 text-1xl" defaultValue={searchMovie} placeholder="Search here.. "
+    onChange={(e)=>filterSearch(e)} style={{backgroundColor:'transparent'}}/>
     <IoMdSearch className="text-2xl text-red-700"/>
   </div>
   <div className="h-auto bg-black grid grid-cols-5 gap-4 mt-2 px-16 py-32 capitalize">

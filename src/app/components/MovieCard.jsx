@@ -4,7 +4,7 @@ import { Rating } from '@mui/material';
 
 export default function MovieCard({ title, type, rate, run, release, gen, kind }) {
   return (
-    <div className="flex flex-col items-center h-auto bg-gray-950 gap-0 mx-auto justify-items-start px-2 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out w-full">
+    <div className="flex flex-col items-center h-auto bg-gray-900 gap-0 mx-auto justify-items-start px-2 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out w-full">
       {/* Movie Image */}
       <div className="relative w-full h-72 overflow-hidden bg-black rounded-md shadow-lg">
         <Image 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 export default function MorePage() {
   const movies = [
@@ -10,7 +10,7 @@ export default function MorePage() {
       genre: 'Sci-Fi',
       slug: 'elio',
       image: '/elio.jpeg',
-      youtubeUrl: 'https://youtu.be/2w_K3CB8PuE', // Add the correct YouTube URL
+      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_elio',
     },
     {
       id: 2,
@@ -69,7 +69,7 @@ export default function MorePage() {
           <Link key={movie.id} href={`/movies/${movie.slug}`}>
             <div className="bg-white bg-opacity-5 backdrop-blur-md p-6 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               {/* Movie Poster */}
-              <Image
+              <img
                 src={movie.image}
                 alt={`${movie.title} Poster`}
                 className="w-full h-auto object-cover rounded-lg mb-4"  

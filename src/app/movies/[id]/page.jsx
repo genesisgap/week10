@@ -6,7 +6,6 @@ import Link from "next/link";
 import MovieCard from "@/app/components/MovieCard";
 import { SidebarContext } from "@/app/providers";
 
-
 const robo = Roboto({ subsets: ["latin"], weight: ['400'] });
 
 export default function MovieDetails({ params }) {
@@ -14,26 +13,6 @@ export default function MovieDetails({ params }) {
 
   // Find movie by URL param
   const details = movies.find(movie => movie.Title.split(' ').join('-') === params.id);
-
-  // Handle case where movie is not found
-  if (!details) {
-    return (
-      <div className="text-center py-10">
-        <p className="text-2xl text-red-500">Movie not found.</p>
-        <Link href="/movies">
-          <button className="bg-slate-800 text-white p-3 rounded-md mt-4 hover:bg-slate-700">
-            Go Back to Movies
-          </button>
-        </Link>
-      </div>
-    );
-  }
-
-  // Add movie to cart function
-  function handleMovieAdd() {
-    setVal(prev => prev + 1);
-    setMovieItem([...movieItem, { title: details.Title, epi: details.Epilogue, type: details.Type }]);
-  }
 
   // Memoize related movies to improve performance
   const relatedMovies = useMemo(() => 
@@ -63,6 +42,26 @@ export default function MovieDetails({ params }) {
     [relatedMovies]
   );
 
+  // Handle case where movie is not found
+  if (!details) {
+    return (
+      <div className="text-center py-10">
+        <p className="text-2xl text-red-500">Movie not found.</p>
+        <Link href="/movies">
+          <button className="bg-slate-800 text-white p-3 rounded-md mt-4 hover:bg-slate-700">
+            Go Back to Movies
+          </button>
+        </Link>
+      </div>
+    );
+  }
+
+  // Add movie to cart function
+  function handleMovieAdd() {
+    setVal(prev => prev + 1);
+    setMovieItem([...movieItem, { title: details.Title, epi: details.Epilogue, type: details.Type }]);
+  }
+
   return (
     <div className="px-6 md:px-16 py-8">
       {/* Movie Title */}
@@ -81,7 +80,6 @@ export default function MovieDetails({ params }) {
           <p><strong>Release Date:</strong> {details.ReleaseDate}</p>
           <p><strong>Genre:</strong> {details.Genre}</p>
           <p><strong>Cast:</strong> {details.Cast.join(", ")}</p>
-          
         </div>
       </div>
 
