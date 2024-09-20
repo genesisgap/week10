@@ -4,7 +4,7 @@ export default function Header() {
   return (
     
     <div className="grid bg-black md:grid-cols-6 grid-cols-1 text-blue-700 grid-rows-[300px_300px_300px] gap-4 p-4">
-    {/* Main Cover Image */}
+   
       <div className="bg-[url(/coverpicture.jpg)] bg-cover bg-center rounded-lg shadow-lg md:col-span-6 md:row-span-2 relative">
       <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg transition-opacity duration-300  hover:bg-opacity-0"></div>
 
@@ -17,7 +17,7 @@ export default function Header() {
       
     </div>
   
-    {/* Other Images in the Grid */}
+   
     <div className="bg-[url(/elio.jpeg)] bg-cover bg-center rounded-lg shadow-lg relative">
       <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg transition-opacity duration-300 ease-in-out hover:bg-opacity-0"></div>
     </div>

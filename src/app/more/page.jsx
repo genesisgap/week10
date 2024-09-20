@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function MorePage() {
   const movies = [
@@ -8,8 +9,10 @@ export default function MorePage() {
       title: 'Elio',
       genre: 'Sci-Fi',
       slug: 'elio',
-      image: '/elio.jpeg',
-      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_elio', // Add the correct YouTube URL
+      width: 300,
+      height: 450,
+      youtubeUrl: 'https://www.youtube.com/watch?v=trailer_elio', 
+      image: '/elio.jpeg', // Add this line
     },
     {
       id: 2,
@@ -17,6 +20,8 @@ export default function MorePage() {
       genre: 'Crime',
       slug: 'young-woman-and-the-sea',
       image: '/young.jpeg',
+      width: 300,
+      height: 450,
       youtubeUrl: 'https://www.youtube.com/watch?v=trailer_young',
     },
     {
@@ -25,6 +30,8 @@ export default function MorePage() {
       genre: 'Drama',
       slug: 'the-marvels',
       image: '/TheMarvels.jpeg',
+      width: 300,
+      height: 450,
       youtubeUrl: 'https://www.youtube.com/watch?v=trailer_marvels',
     },
     {
@@ -33,6 +40,8 @@ export default function MorePage() {
       genre: 'Action',
       slug: 'snow-white',
       image: '/showwhite.jpeg',
+      width: 300,
+      height: 450,
       youtubeUrl: 'https://www.youtube.com/watch?v=trailer_snowwhite',
     },
     {
@@ -41,6 +50,8 @@ export default function MorePage() {
       genre: 'Sci-Fi',
       slug: 'indiana-jones',
       image: '/jones.jpeg',
+      width: 300,
+      height: 450,
       youtubeUrl: 'https://www.youtube.com/watch?v=trailer_jones',
     },
     {
@@ -49,6 +60,8 @@ export default function MorePage() {
       genre: 'Sci-Fi',
       slug: 'solo',
       image: '/solo.jpeg',
+      width: 300,
+      height: 450,
       youtubeUrl: 'https://www.youtube.com/watch?v=trailer_solo',
     },
   ];
@@ -66,16 +79,26 @@ export default function MorePage() {
         {movies.map((movie) => (
           <Link key={movie.id} href={`/movies/${movie.slug}`}>
             <div className="bg-white bg-opacity-5 backdrop-blur-md p-6 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
-             
-              <img
-                src={movie.image}
-                alt={`${movie.title} Poster`}
-                className="w-full h-auto object-cover rounded-lg mb-4"  
-              />
+              {movie.image ? (
+                <Image
+                  src={movie.image}
+                  alt={`${movie.title} Poster`}
+                  width={movie.width} 
+                  height={movie.height}
+                  className="w-full h-auto object-cover rounded-lg mb-4"  
+                />
+              ) : (
+                <img
+                  src={`https://via.placeholder.com/300x450`}
+                  alt={`${movie.title} Poster`}
+                  width={movie.width} 
+                  height={movie.height}
+                  className="w-full h-auto object-cover rounded-lg mb-4"  
+                />
+              )}
               <h2 className="text-2xl text-white font-semibold">{movie.title}</h2>
               <p className="text-sm text-gray-300">Genre: {movie.genre}</p>
 
-        
               <a
                 href={movie.youtubeUrl}
                 target="_blank"
