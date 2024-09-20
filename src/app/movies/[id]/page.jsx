@@ -62,15 +62,15 @@ export default function MovieDetails({ params }) {
   }
 
   return (
-    <div className="px-6 md:px-16 py-8">
+    <div className="px-6 md:px-16 bg-white py-8">
   
-      <h1 className={`${robo.className} text-center font-extrabold text-4xl md:text-6xl bg-gray-800 text-white py-4 rounded-md`}>
+      <h1 className={`${robo.className} text-center font-extrabold text-4xl md:text-6xl bg-gray-900 text-white py-4 rounded-md`}>
         {details.Title}
       </h1>
 
    
       <div className="text-center text-lg md:text-2xl py-4">
-        <p className="text-gray-800 italic py-1">{details.Epilogue}</p>
+        <p className="text-gray-900 italic py-1">{details.Epilogue}</p>
         <div className="py-2 text-gray-800">
           <p><strong>Type:</strong> {details.Type}</p>
           <p><strong>Kind:</strong> {details.Kind}</p>
@@ -86,14 +86,14 @@ export default function MovieDetails({ params }) {
       <div className="text-center py-6">
         <button 
           onClick={handleMovieAdd} 
-          className="bg-slate-900 text-slate-50 p-3 rounded-md hover:bg-slate-700 transition-all">
+          className="bg-gray-900 text-slate-50 p-3 rounded-md hover:bg-slate-700 transition-all">
           Add Movie
         </button>
       </div>
 
 
       <div>
-        <h2 className="text-center bg-gray-700 text-white text-2xl py-2 font-bold rounded-md">
+        <h2 className="text-center bg-gray-900 text-white text-2xl py-2 font-bold rounded-md">
           Related Movies
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 py-6 gap-6">

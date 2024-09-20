@@ -3,6 +3,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { TbBrandDisney } from "react-icons/tb";
+import { SiNetlify } from "react-icons/si";
 import Link from "next/link";
 
 
@@ -31,9 +32,9 @@ export default function Layout({ children }) {
             <li className="flex gap-4 items-start">
               <FaArrowAltCircleRight size={30} className="mt-1" />
               <div className="w-96">
-                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Mission</h1>
+                <h1 className="text-lg md:text-2xl font-semibold  text-blue-700 leading-normal">Welcome!</h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                Welcome to Movie Pop, your go-to platform for high-quality movies for free. Whether you’re into timeless classics or the latest TV hits, Movie Pop offers a wide range of entertainment that’s available twenty four seven. With just a click, you can explore our extensive collection and start watching today!
                 </p>
               </div>
             </li>
@@ -42,9 +43,32 @@ export default function Layout({ children }) {
             <li className="flex gap-4 items-start">
               <FaArrowAltCircleRight size={30} className="mt-1" />
               <div className="w-96">
-                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Vision</h1>
+                <h1 className="text-lg md:text-2xl font-semibold  text-blue-700 leading-normal">Why Choose Movie Pop?</h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                Movie Pop has become a favorite among streaming enthusiasts, offering free, easy access to a wide variety of quality films and TV shows. Here’s what makes Movie Pop stand out:
+
+                <br />
+
+                <br />
+
+                - Extensive Movie Library: From old-time favorites to trending titles, Movie Pop's collection offers something for everyone.
+                <br />
+
+                <br />
+                - Crystal-Clear Streaming: Enjoy high-definition streaming for an immersive viewing experience.
+                Completely Free: No subscriptions, no hidden fees—Movie Pop provides entertainment without breaking the bank.
+                <br />
+
+                <br />
+                - Simple Navigation: The intuitive interface ensures effortless browsing and quick access to all your favorite content.
+                <br />
+
+                <br />
+                - Multilingual Options: With subtitles available in both English and Spanish, Movie Pop caters to diverse audiences.
+                <br />
+
+                <br />
+                -Constant Updates: New movies and TV shows are added regularly to keep the content fresh and exciting.
                 </p>
               </div>
             </li>
@@ -53,9 +77,18 @@ export default function Layout({ children }) {
             <li className="flex gap-4 items-start">
               <FaArrowAltCircleRight size={30} className="mt-1" />
               <div className="w-96">
-                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Purpose</h1>
+                <h1 className="text-lg md:text-2xl font-semibold text-blue-700 leading-normal">Frequently Asked Questions</h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                - Is it possible to watch Movie Pop  content offline?
+                <br />
+                <br />
+                   Movie Pop primarily supports online streaming. However, some titles may offer offline viewing options. For further details, refer to the platform’s terms or contact their support team.
+                   <br />
+                   <br />
+                - How does Movie Pop compare to other free streaming services?
+                <br />
+                <br />
+                  Movie Pop shines for its mix of indie films and classic titles, making it a great alternative to paid services. Though every free platform offers different content, Movie Pop is known for its diverse selection and user-friendly interface.
                 </p>
               </div>
             </li>
@@ -114,6 +147,16 @@ export default function Layout({ children }) {
               <TbBrandDisney size={30} className="mt-1" />
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold leading-normal">Disney UK</h1>
+                <p className="text-sm md:text-md leading-tight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 items-start">
+              <SiNetlify size={30} className="mt-1" />
+              <div className="w-96">
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Netlify</h1>
                 <p className="text-sm md:text-md leading-tight">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
                 </p>

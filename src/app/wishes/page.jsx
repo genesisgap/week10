@@ -18,7 +18,7 @@ export default function WishesPage() {
       {movieItem.length === 0 ? (
         <div className="text-center">
           <h2 className="text-4xl font-bold text-blue-500">Your Wishlist is empty</h2>
-          <p className="text-4x1 text-gray-900 font-bold mt-4">Add movies to your wishlist to see them here..</p>
+          <p className="text-4x1 text-white font-bold mt-4">Add movies to your wishlist to see them here..</p>
         </div>
       ) : (
         <div className="overflow-x-auto">
@@ -36,7 +36,8 @@ export default function WishesPage() {
                 <tr key={index} className="border-b border-gray-800">
                   <td className="p-4">
                     <Image
-                      src={`/public/mv/${movie.title.split(' ').join('')}.jpeg`}
+                    // revise changes here
+                      src={`/mv/${movie.title.split(' ').join('')}.jpeg`}
                       alt={movie.title}
                       title={movie.title}
                       width={150}
