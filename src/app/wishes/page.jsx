@@ -35,7 +35,7 @@ export default function WishesPage() {
               {movieItem.map((movie, index) => (
                 <tr key={index} className="border-b border-gray-800">
                   <td className="p-4">
-                    <Image
+                    <img
                     // revise changes here
                       src={`/mv/${movie.title.split(' ').join('')}.jpeg`}
                       alt={movie.title}
