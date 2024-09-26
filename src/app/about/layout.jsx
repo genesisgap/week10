@@ -34,7 +34,7 @@ export default function Layout({ children }) {
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold  text-blue-700 leading-normal">Welcome!</h1>
                 <p className="text-sm md:text-md leading-tight">
-                Welcome to Movie Pop, your go-to platform for high-quality movies for free. Whether you're into timeless classics or the latest TV hits, Movie Pop offers a wide range of entertainment that's available twenty four seven. With just a click, you can explore our extensive collection and start watching today!
+                Welcome to Movie Pop, your go-to platform for high-quality movies for free. Whether you&apos;re into timeless classics or the latest TV hits, Movie Pop offers a wide range of entertainment that&apos;s available twenty four seven. With just a click, you can explore our extensive collection and start watching today!
                 </p>
               </div>
             </li>
@@ -45,13 +45,13 @@ export default function Layout({ children }) {
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold  text-blue-700 leading-normal">Why Choose Movie Pop?</h1>
                 <p className="text-sm md:text-md leading-tight">
-                Movie Pop has become a favorite among streaming enthusiasts, offering free, easy access to a wide variety of quality films and TV shows. Here's what makes Movie Pop stand out:
+                Movie Pop has become a favorite among streaming enthusiasts, offering free, easy access to a wide variety of quality films and TV shows. Here&apos;s what makes Movie Pop stand out:
 
                 <br />
 
                 <br />
 
-                - Extensive Movie Library: From old-time favorites to trending titles, Movie Pop's collection offers something for everyone.
+                - Extensive Movie Library: From old-time favorites to trending titles, Movie Pop&apos;s collection offers something for everyone.
                 <br />
 
                 <br />
@@ -82,7 +82,7 @@ export default function Layout({ children }) {
                 - Is it possible to watch Movie Pop  content offline?
                 <br />
                 <br />
-                   Movie Pop primarily supports online streaming. However, some titles may offer offline viewing options. For further details, refer to the platform's terms or contact their support team.
+                   Movie Pop primarily supports online streaming. However, some titles may offer offline viewing options. For further details, refer to the platform&apos;s terms or contact their support team.
                           
                 </p>
               </div>
@@ -135,9 +135,9 @@ export default function Layout({ children }) {
               <FaGithub size={30} className="mt-1" />
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold leading-normal">Github</h1>
-                <h2 className="text-2xl">Let's build from here!</h2>
+                <h2 className="text-2xl">Let&apos;s build from here!</h2>
                 <p className="text-sm md:text-md leading-tight">
-                The world's leading AI-powered developer platform.
+                The world&apos;s leading AI-powered developer platform.
                 </p>
               </div>
             </li>
@@ -150,7 +150,7 @@ export default function Layout({ children }) {
                 <h2 className="text-2xl">Vercel enables the world to ship the best products.</h2>
                 <br />
                 <p className="text-sm md:text-md leading-tight">
-                Vercel's Frontend Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalized web.
+                Vercel&apos;s Frontend Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalized web.
                 </p>
               </div>
             </li>
