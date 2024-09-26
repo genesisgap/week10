@@ -22,7 +22,7 @@ export default function MobileNav() {
         <li>
           <Link href={'/'}>Home</Link>
         </li>
-        <li onClick={controlNav} className="cursor-pointer text-2xl" aria-label="Toggle Menu">
+        <li onClick={controlNav} className="flex items-end cursor-pointer text-2xl" aria-label="Toggle Menu">
           <GiHamburgerMenu />
         </li>
       </ul>
