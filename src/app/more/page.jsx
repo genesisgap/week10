@@ -80,7 +80,7 @@ export default function MorePage() {
           <Link key={movie.id} href={`/movies/${movie.slug}`}>
             <div className="bg-white bg-opacity-5 backdrop-blur-md p-6 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
               {movie.image ? (
-                <Image
+                <img
                   src={movie.image}
                   alt={`${movie.title} Poster`}
                   width={movie.width} 
