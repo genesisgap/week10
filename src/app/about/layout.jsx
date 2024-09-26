@@ -34,7 +34,7 @@ export default function Layout({ children }) {
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold  text-blue-700 leading-normal">Welcome!</h1>
                 <p className="text-sm md:text-md leading-tight">
-                Welcome to Movie Pop, your go-to platform for high-quality movies for free. Whether you’re into timeless classics or the latest TV hits, Movie Pop offers a wide range of entertainment that’s available twenty four seven. With just a click, you can explore our extensive collection and start watching today!
+                Welcome to Movie Pop, your go-to platform for high-quality movies for free. Whether you're into timeless classics or the latest TV hits, Movie Pop offers a wide range of entertainment that's available twenty four seven. With just a click, you can explore our extensive collection and start watching today!
                 </p>
               </div>
             </li>
@@ -45,7 +45,7 @@ export default function Layout({ children }) {
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold  text-blue-700 leading-normal">Why Choose Movie Pop?</h1>
                 <p className="text-sm md:text-md leading-tight">
-                Movie Pop has become a favorite among streaming enthusiasts, offering free, easy access to a wide variety of quality films and TV shows. Here’s what makes Movie Pop stand out:
+                Movie Pop has become a favorite among streaming enthusiasts, offering free, easy access to a wide variety of quality films and TV shows. Here's what makes Movie Pop stand out:
 
                 <br />
 
@@ -77,18 +77,13 @@ export default function Layout({ children }) {
             <li className="flex gap-4 items-start">
               <FaArrowAltCircleRight size={30} className="mt-1" />
               <div className="w-96">
-                <h1 className="text-lg md:text-2xl font-semibold text-blue-700 leading-normal">Frequently Asked Questions</h1>
+                <h1 className="text-lg md:text-2xl font-semibold text-blue-700 leading-normal">FAQs</h1>
                 <p className="text-sm md:text-md leading-tight">
                 - Is it possible to watch Movie Pop  content offline?
                 <br />
                 <br />
-                   Movie Pop primarily supports online streaming. However, some titles may offer offline viewing options. For further details, refer to the platform’s terms or contact their support team.
-                   <br />
-                   <br />
-                - How does Movie Pop compare to other free streaming services?
-                <br />
-                <br />
-                  Movie Pop shines for its mix of indie films and classic titles, making it a great alternative to paid services. Though every free platform offers different content, Movie Pop is known for its diverse selection and user-friendly interface.
+                   Movie Pop primarily supports online streaming. However, some titles may offer offline viewing options. For further details, refer to the platform's terms or contact their support team.
+                          
                 </p>
               </div>
             </li>
@@ -112,12 +107,26 @@ export default function Layout({ children }) {
           <ul className="space-y-8">
            
             <li className="flex gap-4 items-start">
-              <FaArrowAltCircleRight size={30} className="mt-1" />
+              <FaArrowAltCircleRight size={30} className="mt-1 text-green-700" />
               <div className="w-96">
-                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Univelcity</h1>
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal text-green-600">Univelcity</h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                Univelcity is an international coding Bootcamp that offers coding bootcamps ranging from coding to design skillset.
+                <br />
+                <br />
+
+                Univelcity was founded in 2016 with the purpose of teaching young people how to code and prepare them for the professional workspace.
                 </p>
+                <br />
+                <p>No 42, Montgomery Road, Yaba Lagos, Nigeria.</p>
+                <br />
+                <p>For more info on our Classes</p>
+                <p>(+234) 906 355 2422</p>
+                <p>(+234) 906 4717 877</p>
+                <p>(+234) 906 988 0198</p>
+                <br />
+                <p>Online@univelcity.com</p>
+    
               </div>
             </li>
 
@@ -126,8 +135,9 @@ export default function Layout({ children }) {
               <FaGithub size={30} className="mt-1" />
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold leading-normal">Github</h1>
+                <h2 className="text-2xl">Let's build from here!</h2>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                The world's leading AI-powered developer platform.
                 </p>
               </div>
             </li>
@@ -137,8 +147,10 @@ export default function Layout({ children }) {
               <IoLogoVercel size={30} className="mt-1" />
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold leading-normal">Vercel</h1>
+                <h2 className="text-2xl">Vercel enables the world to ship the best products.</h2>
+                <br />
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                Vercel's Frontend Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalized web.
                 </p>
               </div>
             </li>
@@ -148,7 +160,7 @@ export default function Layout({ children }) {
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold leading-normal">Disney UK</h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                This site is owned and operated by The Walt Disney Company Limited. Registered in England and Wales with its registered office at 3 Queen Caroline Street, Hammersmith, London W6 9PE.
                 </p>
               </div>
             </li>
@@ -157,18 +169,19 @@ export default function Layout({ children }) {
               <SiNetlify size={30} className="mt-1" />
               <div className="w-96">
                 <h1 className="text-lg md:text-2xl font-semibold leading-normal">Netlify</h1>
+                <h2 className="text-2xl">Connect everything. Build anything.</h2>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                Netlify is the essential platform for the delivery of exceptional and dynamic web experiences, without limitations.
                 </p>
               </div>
             </li>
 
             <li className="flex gap-4 items-start">
-              <FaArrowAltCircleRight size={30} className="mt-1" />
+              <FaArrowAltCircleRight size={30} className="mt-1 text-orange-700" />
               <div className="w-96">
-                <h1 className="text-lg md:text-2xl font-semibold leading-normal">Frontend June24 Cohorts Collegues</h1>
+                <h1 className="text-lg md:text-2xl font-semibold leading-normal text-orange-700">Frontend June24 Cohorts Classmates</h1>
                 <p className="text-sm md:text-md leading-tight">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint error voluptas et. Odio ad iusto voluptatum provident laudantium. Modi dolores fugit dolor labore nam atque illo porro officiis facilis.
+                Thanks to my very own ever reliable and dependable classmates in this journey.
                 </p>
               </div>
             </li>

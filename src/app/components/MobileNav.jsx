@@ -5,10 +5,10 @@ import { useState } from 'react';
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
-  const [val, setVal] = useState();
+  const [val, setVal] = useState(10);
 
   function changeVal() {
-    setVal((prev) => prev + 30);
+    setVal((prev) => prev + 20);
   }
 
   function controlNav() {
@@ -16,9 +16,9 @@ export default function MobileNav() {
   }
 
   return (
-    <nav className="md:flex md:flex-wrap">
+    <nav>
      
-      <ul className="flex justify-between md:items-center md:hidden h-32 text-white">
+      <ul className="flex items-center justify-around md:hidden h-36 text-white">
         <li>
           <Link href={'/'}>Home</Link>
         </li>
@@ -29,7 +29,7 @@ export default function MobileNav() {
 
       
       {open && (
-        <ul className="absolute top-16 right-0 bg-black text-white w-auto rounded-lg shadow-lg py-4 px-6 flex flex-col gap-2 capitalize items-end">
+        <ul className="flex flex-col justify-around md:hidden items-end h-72 pr-32">
           <Link href={'/'}>
             <li className="hover:text-green-500">home</li>
           </Link>
@@ -51,8 +51,7 @@ export default function MobileNav() {
           </Link>
 
           <li className="text-fuchsia-500"> {val}</li>
-          <li onClick={changeVal} className="cursor-pointer text-blue-500 hover:text-blue-300">
-          
+          <li onClick={changeVal} className="cursor-pointer text-blue-500 hover:text-blue-300">Increase       
           </li>
         </ul>
       )}
