@@ -27,16 +27,16 @@ export default function Footer() {
 
       
       <div className="flex space-x-6 mt-6 md:mt-0">
-        <a href="https://www.facebook.com/" className="text-gray-500 hover:text-blue-700 transition-all">
+        <a href="https://www.facebook.com/" target='_blank' rel="noopener" className="text-gray-500 hover:text-blue-700 transition-all">
           <FaFacebookSquare size={30} />
         </a>
-        <a href="https://twitter.com/?lang=en" className="text-gray-500 hover:text-blue-400 transition-all">
+        <a href="https://twitter.com/?lang=en" target='_blank' rel="noopener"  className="text-gray-500 hover:text-blue-400 transition-all">
           <BsTwitterX size={30} />
         </a>
-        <a href="https://www.instagram.com/" className="text-gray-500 hover:text-pink-600 transition-all">
+        <a href="https://www.instagram.com/" target='_blank' rel="noopener"  className="text-gray-500 hover:text-pink-600 transition-all">
           <SlSocialInstagram size={30} />
         </a>
-        <a href="https://www.youtube.com/" className="text-gray-500 hover:text-red-600 transition-all">
+        <a href="https://www.youtube.com/" target='_blank' rel="noopener"  className="text-gray-500 hover:text-red-600 transition-all">
           <IoLogoYoutube size={30} />
         </a>
       </div>

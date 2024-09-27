@@ -20,12 +20,14 @@ export default function MovieLists() {
  
   {cards}
 
- 
-  <Link href={'/movies'} className="flex items-center py-4 mt-0 justify-center col-span-1 sm:col-span-2 md:col-span-4 lg:col-span-4">
+    <div className='flex items-center justify-center ml-96 pl-36 w-full'>
+    <Link href={'/movies'} className="flex items-center py-4 mt-0 justify-center col-span-1 sm:col-span-2 md:col-span-4 lg:col-span-4">
     <span className="bg-gray-900 hover:bg-blue-700 mt-0 text-white rounded-md px-4 py-2 text-center capitalize transition-colors duration-300 ease-in-out">
-      See more movies.
-    </span>
-  </Link>
+      See more movies.</span></Link>
+
+    </div>
+  
+
 </div>
 
     </>
