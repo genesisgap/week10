@@ -35,7 +35,7 @@ export default function Header() {
       <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg transition-opacity duration-300 ease-in-out hover:bg-opacity-0"></div>
     </div>
   
-    <div className="bg-[url(/showwhite.jpeg)] bg-cover bg-center rounded-lg shadow-lg relative">
+    <div className="bg-[url(/snowwhite.jpeg)] bg-cover bg-center rounded-lg shadow-lg relative">
       <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg transition-opacity duration-300 ease-in-out hover:bg-opacity-0"></div>
     </div>
   

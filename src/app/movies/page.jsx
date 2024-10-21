@@ -33,7 +33,7 @@ export default function MoviePage() {
     onChange={(e)=>filterSearch(e)} style={{backgroundColor:'transparent'}}/>
     <IoMdSearch className="text-2xl text-red-700"/>
   </div>
-  <div className="h-auto bg-gray-800 grid md:grid-cols-5 grid-cols-1 gap-4 mt-2 px-16 py-32 capitalize">
+  <div className="h-auto bg-gray-900 grid md:grid-cols-5 grid-cols-1 gap-4 mt-2 px-16 py-32 capitalize">
     {cards}
   </div>
   </>

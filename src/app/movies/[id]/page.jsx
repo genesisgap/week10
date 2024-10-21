@@ -16,10 +16,10 @@ export default function MovieDetails({ params }) {
 
  
   const relatedMovies = useMemo(() => 
-    movies.filter(card => card.Type === details.Type && details.Title !== card.Title), 
-    [details.Type, details.Title]
-  );
-
+    movies.filter(card => card.Genre === details.Genre && details.Title !== card.Title), 
+    [details.Genre, details.Title]
+  ); 
+  
   const relatedCard = useMemo(() => relatedMovies.map((card, index) => (
       <Link 
         href={`/movies/${card.Title.split(' ').join('-')}`} 
@@ -48,7 +48,7 @@ export default function MovieDetails({ params }) {
       <div className="text-center py-10">
         <p className="text-2xl text-red-500">Movie not found.</p>
         <Link href="/movies">
-          <button className="bg-slate-800 text-white p-3 rounded-md mt-4 hover:bg-slate-700">
+          <button className="bg-black text-white p-3 rounded-md mt-4 hover:bg-slate-700">
             Go Back to Movies
           </button>
         </Link>
