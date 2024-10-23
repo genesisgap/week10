@@ -10,7 +10,7 @@ import { GrCart } from "react-icons/gr";
 export default function Navbar() {
   const { val } = useContext(SidebarContext)
   return (
-    <nav className="flex flex-wrap justify-between md:items-center bg-gray-950 md:px-8 text-blue-700 text-lg">
+    <nav className="md:flex flex-wrap justify-between md:items-center bg-gray-950 md:px-8 text-blue-700 text-lg">
       
         <span className="flex font-bold text-white hover:text-blue-700 transition-all duration-700 gap-2 tracking-wide text-3xl md:bg-transparent">
        <SiWondersharefilmora size={34} color="blue"/>Movie Pop
@@ -41,7 +41,7 @@ export default function Navbar() {
           </ul>
 
           <Link href={'/wishes'}>
-            <li className="flex capitalize justify-items-end md:items-center hover:text-blue-700 ml-72 text-white gap-1 text-xl">add to cart<GrCart size={36} color="blue"/> {val}</li>
+            <li className="flex capitalize justify-items-end md:items-center hover:text-blue-700 ml-80 text-white gap-1 text-xs">add to cart<GrCart size={36} color="blue"/> {val}</li>
             </Link>
       
 

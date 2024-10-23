@@ -16,10 +16,10 @@ export default function MovieDetails({ params }) {
 
  
   const relatedMovies = useMemo(() => 
-    movies.filter(card => card.Genre === details.Genre && details.Title !== card.Title), 
-    [details.Genre, details.Title]
-  ); 
-  
+    movies.filter(card => card.Type === details.Type && details.Title !== card.Title), 
+    [details.Type, details.Title]
+  );
+
   const relatedCard = useMemo(() => relatedMovies.map((card, index) => (
       <Link 
         href={`/movies/${card.Title.split(' ').join('-')}`} 

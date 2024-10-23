@@ -18,18 +18,18 @@ export default function MobileNav() {
   return (
     <nav>
      
-      <ul className="flex items-center justify-around md:hidden h-36 text-white">
+      <ul className="flex items-center justify-around md:hidden h-20 text-white">
         <li>
           <Link href={'/'}>Home</Link>
         </li>
-        <li onClick={controlNav} className="flex items-end cursor-pointer text-2xl" aria-label="Toggle Menu">
+        <li onClick={controlNav} className="cursor-pointer">
           <GiHamburgerMenu />
         </li>
       </ul>
 
       
       {open && (
-        <ul className="flex flex-col justify-around md:hidden items-end h-72 pr-32">
+        <ul className="flex flex-col justify-around md:hidden capitalize items-end h-72 pr-24">
           <Link href={'/'}>
             <li className="hover:text-green-500">home</li>
           </Link>
@@ -51,8 +51,7 @@ export default function MobileNav() {
           </Link>
 
           <li className="text-fuchsia-500"> {val}</li>
-          <li onClick={changeVal} className="cursor-pointer text-blue-500 hover:text-blue-300">Increase       
-          </li>
+          <li onClick={changeVal}>Increase</li>
         </ul>
       )}
     </nav>
