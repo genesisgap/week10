@@ -72,7 +72,7 @@ export default function MorePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-black p-8">
+    <div className="min-h-screen w-auto bg-black p-8">
       <h1 className="text-6xl font-bold text-center mb-4 text-blue-700">
         More Movies Discovery
       </h1>

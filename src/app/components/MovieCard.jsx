@@ -27,5 +27,6 @@ export default function MovieCard({ title, type, rate, run, release, gen, kind }
         <p className="text-gray-500 hover:text-blue-700 mt-0">{parseInt(run / 60)}hr{parseInt(run / 60) > 1 ? 's ' : ' '}{run % 60}min</p>
       </div>
     </div>
+    
   );
 }

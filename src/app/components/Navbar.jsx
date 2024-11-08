@@ -4,7 +4,7 @@ import MobileNav from "./MobileNav";
 import { useContext } from "react";
 import { SidebarContext } from "../providers";
 import { SiWondersharefilmora } from "react-icons/si";
-import { GrCart } from "react-icons/gr";
+import { MdFavorite } from "react-icons/md";
 
 
 export default function Navbar() {
@@ -41,7 +41,7 @@ export default function Navbar() {
           </ul>
 
           <Link href={'/wishes'}>
-            <li className="flex capitalize justify-items-end md:items-center hover:text-blue-700 ml-80 text-white gap-1 text-xs">add to cart<GrCart size={36} color="blue"/> {val}</li>
+            <li className="flex capitalize justify-items-end md:items-center hover:text-red-600 ml-80 text-white gap-1 text-xs">My Favourites<MdFavorite size={30} color="Red"/> {val}</li>
             </Link>
       
 
